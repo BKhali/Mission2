@@ -1,0 +1,3 @@
+[submodule "ProjetEmployes"]
+    path = ProjetEmployes
+    url = https://github.com/BKhali/ProjetEmployes
