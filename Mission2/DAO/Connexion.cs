@@ -22,7 +22,7 @@ namespace Connecte {
         private string connString;
 
 
-        private ConnexionSql(string unProvider, string uneDataBase, string unUid, string unMdp)
+        public ConnexionSql(string unProvider, string uneDataBase, string unUid, string unMdp)
         {
 
 

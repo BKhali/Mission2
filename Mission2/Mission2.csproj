@@ -51,6 +51,7 @@
     <Compile Include="classes\port.cs" />
     <Compile Include="classes\secteur.cs" />
     <Compile Include="classes\traversee.cs" />
+    <Compile Include="controleur\Mgr.cs" />
     <Compile Include="DAO\Connexion.cs" />
     <Compile Include="vue\Form1.cs">
       <SubType>Form</SubType>
@@ -90,8 +91,6 @@
       <Version>9.1.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="controleur\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
