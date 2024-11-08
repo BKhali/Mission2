@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\bateau.cs" />
     <Compile Include="classes\liaison.cs" />
+    <Compile Include="classes\port.cs" />
+    <Compile Include="classes\secteur.cs" />
+    <Compile Include="classes\traversee.cs" />
     <Compile Include="DAO\Connexion.cs" />
     <Compile Include="vue\Form1.cs">
       <SubType>Form</SubType>
