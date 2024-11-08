@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission2.classes
 {
-    internal class secteur
+    public class secteur
     {
         private int id;
         private string libelle;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission2.classes
 {
-    internal class traversee
+    public class traversee
     {
         private int id;
         private liaison id_liaison;

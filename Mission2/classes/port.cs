@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission2.classes
 {
-    internal class port
+    public class port
     {
         private int id;
         private string nom;

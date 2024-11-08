@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission2.classes
 {
-    internal class bateau
+    public class bateau
     {
         private int id;
         private string nom;

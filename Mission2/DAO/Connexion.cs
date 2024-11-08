@@ -5,6 +5,8 @@ using System.Text;
 using System.Data.OleDb;
 using System.Windows.Forms ;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
+using Mission2.classes;
 
 namespace Connecte {
 

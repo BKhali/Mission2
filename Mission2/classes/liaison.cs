@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Mission2.classes
 {
-    internal class liaison
+    public class liaison
     {
         private int id;
         private secteur id_secteur;
