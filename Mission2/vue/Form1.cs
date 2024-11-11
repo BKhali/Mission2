@@ -54,7 +54,7 @@ namespace Mission2
         }
 
         // Événement pour gérer la sélection dans listBoxLiaison
-        private void listBoxLiaison_SelectedIndexChanged(object sender, EventArgs e)
+        /**private void listBoxLiaison_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Vérifier si un élément est sélectionné
             if (listBoxliaison.SelectedItem != null)
@@ -80,7 +80,7 @@ namespace Mission2
                     }
                 }
             }
-        }
+        }**/
 
     }
 }
