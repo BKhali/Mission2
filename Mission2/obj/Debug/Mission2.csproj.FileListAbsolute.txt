@@ -58,3 +58,12 @@ C:\Users\lgame\Documents\BTSSIO\2a\Tp\COmmentcamarche\Mission2\Mission2\obj\Debu
 C:\Users\lgame\Documents\BTSSIO\2a\Tp\COmmentcamarche\Mission2\Mission2\obj\Debug\Mission2.csproj.CopyComplete
 C:\Users\lgame\Documents\BTSSIO\2a\Tp\COmmentcamarche\Mission2\Mission2\obj\Debug\Mission2.exe
 C:\Users\lgame\Documents\BTSSIO\2a\Tp\COmmentcamarche\Mission2\Mission2\obj\Debug\Mission2.pdb
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.csproj.AssemblyReference.cache
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.csproj.SuggestedBindingRedirects.cache
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.exe.config
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.Properties.Resources.resources
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.Form1.resources
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.csproj.GenerateResource.cache
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.csproj.CoreCompileInputs.cache
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.exe
+C:\Users\lgame\Documents\BTSSIO\2a\Tp\Mission2\Mission2\obj\Debug\Mission2.pdb
