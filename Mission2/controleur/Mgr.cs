@@ -48,6 +48,14 @@ namespace Connecte.Controleur
 
             return (listetraversee);
         }
+        public void traversedel(traversee id)
+        {
+            TraverseeDAO.deltraverse(id);
+        }
+        public void traverseInsert(int id_liaison, int id_traverse, int id_bateau, string Datetraverse, string heure)
+        {
+            TraverseeDAO.inserttraverse(id_liaison, id_traverse, id_bateau, Datetraverse, heure);
+        }
     }
 }
 

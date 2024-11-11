@@ -65,9 +65,7 @@ namespace Mission2
         }
 
         // Événement pour gérer la sélection dans listBoxLiaison
-
-        private void listBoxliaison_SelectedIndexChanged_1(object sender, EventArgs e)
-
+        public void chargerTraverse()
         {
             // Vérifier si un élément est sélectionné
             if (listBoxliaison.SelectedItem != null)
@@ -93,6 +91,44 @@ namespace Mission2
                     }
                 }
             }
+        }
+        private void listBoxliaison_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            chargerTraverse();
+        }
+
+        private void Supr_traverse_Click(object sender, EventArgs e)
+        {
+            if (listBoxliaison.SelectedItem != null)
+            {
+                // Récupérer la liaison sélectionnée
+                traversee selectedTraverse = listBoxtraverse.SelectedItem as traversee;
+
+                if (selectedTraverse != null)
+                {
+                    try
+                    {
+                        // Afficher les traversées dans listBoxTraverse
+                        Matraverse.traversedel(selectedTraverse);
+                        chargerTraverse();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erreur lors de la suppression des traversées : " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void btnInser_Click(object sender, EventArgs e)
+        {
+            int idliaison = Convert.ToInt32(Ajout_id_liaison.Text);
+            int idtraverse = Convert.ToInt32(Ajout_id_traverse.Text);
+            int idbateau = Convert.ToInt32(Ajout_id_bateau.Text);
+            string date = Ajout_date.Text;
+            string heure = Ajout_heure.Text;
+            Matraverse.traverseInsert(idliaison,idtraverse,idbateau,date,heure);
+            chargerTraverse();
         }
     }
 }

@@ -38,7 +38,7 @@
             this.Ajout_date = new System.Windows.Forms.TextBox();
             this.Ajout_id_bateau = new System.Windows.Forms.TextBox();
             this.Ajout_id_traverse = new System.Windows.Forms.TextBox();
-            this.Nouvel_traverse_button = new System.Windows.Forms.Button();
+            this.btnInser = new System.Windows.Forms.Button();
             this.Ajout_id_liaison = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -77,13 +77,13 @@
             this.groupBox1.Controls.Add(this.Ajout_date);
             this.groupBox1.Controls.Add(this.Ajout_id_bateau);
             this.groupBox1.Controls.Add(this.Ajout_id_traverse);
-            this.groupBox1.Controls.Add(this.Nouvel_traverse_button);
+            this.groupBox1.Controls.Add(this.btnInser);
             this.groupBox1.Controls.Add(this.Ajout_id_liaison);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(32, 268);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(303, 166);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
@@ -132,7 +132,7 @@
             // Ajout_heure
             // 
             this.Ajout_heure.Location = new System.Drawing.Point(159, 129);
-            this.Ajout_heure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ajout_heure.Margin = new System.Windows.Forms.Padding(4);
             this.Ajout_heure.Name = "Ajout_heure";
             this.Ajout_heure.Size = new System.Drawing.Size(132, 22);
             this.Ajout_heure.TabIndex = 15;
@@ -140,7 +140,7 @@
             // Ajout_date
             // 
             this.Ajout_date.Location = new System.Drawing.Point(159, 101);
-            this.Ajout_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ajout_date.Margin = new System.Windows.Forms.Padding(4);
             this.Ajout_date.Name = "Ajout_date";
             this.Ajout_date.Size = new System.Drawing.Size(132, 22);
             this.Ajout_date.TabIndex = 14;
@@ -148,7 +148,7 @@
             // Ajout_id_bateau
             // 
             this.Ajout_id_bateau.Location = new System.Drawing.Point(159, 74);
-            this.Ajout_id_bateau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ajout_id_bateau.Margin = new System.Windows.Forms.Padding(4);
             this.Ajout_id_bateau.Name = "Ajout_id_bateau";
             this.Ajout_id_bateau.Size = new System.Drawing.Size(132, 22);
             this.Ajout_id_bateau.TabIndex = 13;
@@ -156,25 +156,26 @@
             // Ajout_id_traverse
             // 
             this.Ajout_id_traverse.Location = new System.Drawing.Point(159, 46);
-            this.Ajout_id_traverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ajout_id_traverse.Margin = new System.Windows.Forms.Padding(4);
             this.Ajout_id_traverse.Name = "Ajout_id_traverse";
             this.Ajout_id_traverse.Size = new System.Drawing.Size(132, 22);
             this.Ajout_id_traverse.TabIndex = 12;
             // 
-            // Nouvel_traverse_button
+            // btnInser
             // 
-            this.Nouvel_traverse_button.Location = new System.Drawing.Point(0, 124);
-            this.Nouvel_traverse_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Nouvel_traverse_button.Name = "Nouvel_traverse_button";
-            this.Nouvel_traverse_button.Size = new System.Drawing.Size(100, 28);
-            this.Nouvel_traverse_button.TabIndex = 7;
-            this.Nouvel_traverse_button.Text = "MAJ";
-            this.Nouvel_traverse_button.UseVisualStyleBackColor = true;
+            this.btnInser.Location = new System.Drawing.Point(0, 124);
+            this.btnInser.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInser.Name = "btnInser";
+            this.btnInser.Size = new System.Drawing.Size(100, 28);
+            this.btnInser.TabIndex = 7;
+            this.btnInser.Text = "Insérer";
+            this.btnInser.UseVisualStyleBackColor = true;
+            this.btnInser.Click += new System.EventHandler(this.btnInser_Click);
             // 
             // Ajout_id_liaison
             // 
             this.Ajout_id_liaison.Location = new System.Drawing.Point(159, 20);
-            this.Ajout_id_liaison.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ajout_id_liaison.Margin = new System.Windows.Forms.Padding(4);
             this.Ajout_id_liaison.Name = "Ajout_id_liaison";
             this.Ajout_id_liaison.Size = new System.Drawing.Size(132, 22);
             this.Ajout_id_liaison.TabIndex = 9;
@@ -193,9 +194,9 @@
             // 
             this.groupBox2.Controls.Add(this.Supr_traverse);
             this.groupBox2.Location = new System.Drawing.Point(353, 268);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(225, 166);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -204,12 +205,13 @@
             // Supr_traverse
             // 
             this.Supr_traverse.Location = new System.Drawing.Point(63, 51);
-            this.Supr_traverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Supr_traverse.Margin = new System.Windows.Forms.Padding(4);
             this.Supr_traverse.Name = "Supr_traverse";
             this.Supr_traverse.Size = new System.Drawing.Size(100, 60);
             this.Supr_traverse.TabIndex = 12;
             this.Supr_traverse.Text = "Supprimer la traversée";
             this.Supr_traverse.UseVisualStyleBackColor = true;
+            this.Supr_traverse.Click += new System.EventHandler(this.Supr_traverse_Click);
             // 
             // groupBox3
             // 
@@ -219,9 +221,9 @@
             this.groupBox3.Controls.Add(this.Modif_Date);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Location = new System.Drawing.Point(604, 268);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(267, 166);
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
@@ -230,7 +232,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(26, 74);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 20;
@@ -238,7 +240,7 @@
             // Modif_traverse
             // 
             this.Modif_traverse.Location = new System.Drawing.Point(85, 13);
-            this.Modif_traverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Modif_traverse.Margin = new System.Windows.Forms.Padding(4);
             this.Modif_traverse.Name = "Modif_traverse";
             this.Modif_traverse.Size = new System.Drawing.Size(100, 28);
             this.Modif_traverse.TabIndex = 15;
@@ -258,7 +260,7 @@
             // Modif_Date
             // 
             this.Modif_Date.Location = new System.Drawing.Point(26, 46);
-            this.Modif_Date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Modif_Date.Margin = new System.Windows.Forms.Padding(4);
             this.Modif_Date.Name = "Modif_Date";
             this.Modif_Date.Size = new System.Drawing.Size(132, 22);
             this.Modif_Date.TabIndex = 16;
@@ -315,7 +317,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBoxliaison);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -333,7 +335,7 @@
 
         private System.Windows.Forms.ListBox listBoxliaison;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button Nouvel_traverse_button;
+        private System.Windows.Forms.Button btnInser;
         private System.Windows.Forms.TextBox Ajout_id_liaison;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
