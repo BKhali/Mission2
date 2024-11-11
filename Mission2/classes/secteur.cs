@@ -17,6 +17,10 @@ namespace Mission2.classes
             this.libelle = libelle;
         }
 
+        public string DescriptionS
+        {
+            get => "Secteur: " + id + " libelle: " + libelle;
+        }
         public int getId() { return id; }
         public string getLibelle() {  return libelle; }
 

@@ -17,6 +17,11 @@ namespace Mission2.classes
             this.nom = nom;
         }
 
+        public string DescriptionP
+        {
+            get => "Secteur: " + id + " nom: " + nom;
+        }
+
         public int getId() { return id; }
         public string getNom() { return nom; }
     }

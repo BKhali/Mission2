@@ -54,6 +54,7 @@
     <Compile Include="controleur\Mgr.cs" />
     <Compile Include="DAO\Connexion.cs" />
     <Compile Include="DAO\liaisonDAO.cs" />
+    <Compile Include="DAO\traverseeDAO.cs" />
     <Compile Include="vue\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -22,5 +22,8 @@ namespace Mission2.classes
             this.date = date;
             this.heure = heure;
         }
+
+        public int getId() { return id; }
+        public liaison getid_liaison() { return id_liaison; }
     }
 }

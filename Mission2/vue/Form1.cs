@@ -25,7 +25,7 @@ namespace Mission2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lEmp = Maliaison.chargementBD();
+            lEmp = Maliaison.chargementBDL();
 
             affiche();
         }
@@ -41,7 +41,7 @@ namespace Mission2
 
                 listBoxliaison.DataSource = null;
                 listBoxliaison.DataSource = lEmp;
-                listBoxliaison.DisplayMember = "Description";
+                listBoxliaison.DisplayMember = "DescriptionL";
 
 
             }
@@ -54,5 +54,35 @@ namespace Mission2
             }
 
         }
+
+        // Événement pour gérer la sélection dans listBoxLiaison
+        private void listBoxLiaison_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Vérifier si un élément est sélectionné
+            if (listBoxliaison.SelectedItem != null)
+            {
+                // Récupérer la liaison sélectionnée
+                liaison selectedLiaison = listBoxtraverse.SelectedItem as liaison;
+
+                if (selectedLiaison != null)
+                {
+                    try
+                    {
+                        // Charger les traversées associées à la liaison sélectionnée
+                        List<traversee> traverses = traversee.ChargerTraversesParLiaison(selectedLiaison.getId);
+
+                        // Afficher les traversées dans listBoxTraverse
+                        listBoxtraverse.DataSource = null;
+                        listBoxtraverse.DataSource = traverses;
+                        listBoxtraverse.DisplayMember = "DescriptionT";
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erreur lors du chargement des traversées : " + ex.Message);
+                    }
+                }
+            }
+        }
+
     }
 }

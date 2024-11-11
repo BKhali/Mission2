@@ -25,12 +25,19 @@ namespace Connecte.Controleur
 
 
         // Récupération de la liste des liaison
-        public List<liaison> chargementBD()
+        public List<liaison> chargementBDL()
         {
 
             listeliaison = liaisonDAO.getliaison();
 
             return (listeliaison);
+        }
+        public List<traversee> chargementBDT()
+        {
+
+            listetraversee = TraverseeDAO.getTraversee();
+
+            return (listetraversee);
         }
 
     }

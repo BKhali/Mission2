@@ -24,9 +24,10 @@ namespace Mission2.classes
             this.id_port_arrivee = id_port_arrivee;
         }
 
+        public int getId() { return id; }
         public string DescriptionL
         {
-            get => "Liaison:" + id + "secteur:" + id_secteur + "durée:" + duree + "id port depart:" + id_port_depart + "id port arrivee:" + id_port_arrivee;
+            get => "Liaison:" + id + " secteur:" + id_secteur.DescriptionS +" durée:" + duree + " port depart:" + id_port_depart.DescriptionP + " port arrivee:" + id_port_arrivee.DescriptionP;
         }
     }
 }
