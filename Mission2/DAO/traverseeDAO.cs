@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using Mission2.classes;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Connecte.DAO
 {
@@ -27,7 +28,6 @@ namespace Connecte.DAO
 
 
         private static MySqlCommand Ocom;
-
         public static void deltraverse(traversee e)
         {
 
@@ -88,7 +88,6 @@ namespace Connecte.DAO
         }
 
         // Récupération de la liste
-
         public static List<traversee> getTraversee()
         {
 
@@ -180,11 +179,22 @@ namespace Connecte.DAO
             }
 
 
+<<<<<<< HEAD
 
 
 
             /**
             public static List<traversee> getTraversee()
+=======
+        }
+        /**
+        public static List<traversee> getTraversee()
+        {
+
+            List<traversee> lc = new List<traversee>();
+
+            try
+>>>>>>> 21f9de5802b56f164384a3383f1e70712296b376
             {
 
                 List<traversee> lc = new List<traversee>();
@@ -320,6 +330,81 @@ namespace Connecte.DAO
 
             }**/
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
+        /**
+        public static void supprEmploye(Employe e)
+        {
+
+            try
+            {
+
+
+                maConnexionSql = ConnexionSql.getInstance(provider, dataBase, uid, mdp);
+
+
+                maConnexionSql.openConnection();
+
+
+                Ocom = maConnexionSql.reqExec("DELETE FROM employe WHERE id=" + e.Id);
+
+
+                int i = Ocom.ExecuteNonQuery();
+
+
+
+                maConnexionSql.closeConnection();
+
+
+
+            }
+
+            catch (Exception emp)
+            {
+
+                throw (emp);
+            }
+
+
+        }
+        public static void insertEmploye(int id, string login)
+        {
+
+            try
+            {
+
+
+                maConnexionSql = ConnexionSql.getInstance(provider, dataBase, uid, mdp);
+
+
+                maConnexionSql.openConnection();
+
+
+                Ocom = maConnexionSql.reqExec("INSERT INTO employe VALUES (" + id + ",'','','" + login + "',0)");
+
+
+                int i = Ocom.ExecuteNonQuery();
+
+
+
+                maConnexionSql.closeConnection();
+
+
+
+            }
+
+            catch (Exception emp)
+            {
+
+                throw (emp);
+            }
+
+
+        }**/
+    }
+>>>>>>> 21f9de5802b56f164384a3383f1e70712296b376
 
 }
 

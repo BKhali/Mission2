@@ -42,8 +42,6 @@ namespace Mission2
                 listBoxliaison.DataSource = null;
                 listBoxliaison.DataSource = lEmp;
                 listBoxliaison.DisplayMember = "DescriptionL";
-
-
             }
 
 
