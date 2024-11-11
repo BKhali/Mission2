@@ -40,6 +40,7 @@ namespace Connecte.Controleur
 
             return (listetraversee);
         }
+
         public List<traversee> ChargerTraversesParLiaison(int id)
         {
 
@@ -47,6 +48,6 @@ namespace Connecte.Controleur
 
             return (listetraversee);
         }
-
     }
 }
+

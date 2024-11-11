@@ -3,27 +3,27 @@
   "WorkspaceRootPath": "B:\\\u00E9cole\\Projety\\Mission2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|B:\\\u00E9cole\\Projety\\Mission2\\mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|B:\\\u00E9cole\\Projety\\Mission2\\mission2\\controleur\\mgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\controleur\\mgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|b:\\\u00E9cole\\projety\\mission2\\mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|b:\\\u00E9cole\\projety\\mission2\\mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|B:\\\u00E9cole\\Projety\\Mission2\\mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\vue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|b:\\\u00E9cole\\projety\\mission2\\mission2\\dao\\traverseedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|B:\\\u00E9cole\\Projety\\Mission2\\mission2\\dao\\traverseedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\dao\\traverseedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|b:\\\u00E9cole\\projety\\mission2\\mission2\\classes\\traversee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|B:\\\u00E9cole\\Projety\\Mission2\\mission2\\classes\\traversee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\classes\\traversee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|b:\\\u00E9cole\\projety\\mission2\\mission2\\classes\\liaison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|B:\\\u00E9cole\\Projety\\Mission2\\mission2\\classes\\liaison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09951F3E-285A-441E-B013-6BB109CAD6D8}|Mission2\\Mission2.csproj|solutionrelative:mission2\\classes\\liaison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "B:\\\u00E9cole\\Projety\\Mission2\\Mission2\\vue\\Form1.cs",
               "RelativeDocumentMoniker": "Mission2\\vue\\Form1.cs",
               "ToolTip": "B:\\\u00E9cole\\Projety\\Mission2\\Mission2\\vue\\Form1.cs*",
               "RelativeToolTip": "Mission2\\vue\\Form1.cs*",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAkwFgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwF4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T12:55:43.981Z",
               "IsPinned": true,
@@ -52,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Mgr.cs",
               "DocumentMoniker": "B:\\\u00E9cole\\Projety\\Mission2\\Mission2\\controleur\\Mgr.cs",
               "RelativeDocumentMoniker": "Mission2\\controleur\\Mgr.cs",
-              "ToolTip": "B:\\\u00E9cole\\Projety\\Mission2\\Mission2\\controleur\\Mgr.cs",
-              "RelativeToolTip": "Mission2\\controleur\\Mgr.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwC0AAAA9AAAAAAAAAA==",
+              "ToolTip": "B:\\\u00E9cole\\Projety\\Mission2\\Mission2\\controleur\\Mgr.cs*",
+              "RelativeToolTip": "Mission2\\controleur\\Mgr.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T12:55:44.313Z",
               "IsPinned": true,
@@ -86,8 +86,7 @@
               "RelativeToolTip": "Mission2\\classes\\traversee.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:20:46.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T13:20:46.847Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "RelativeToolTip": "Mission2\\classes\\liaison.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:19:58.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T13:19:58.277Z"
             },
             {
               "$type": "Document",
@@ -112,8 +110,7 @@
               "RelativeToolTip": "Mission2\\DAO\\traverseeDAO.cs",
               "ViewState": "AgIAAMAAAAAAAAAAAAAuwM8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T12:55:44.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T12:55:44.159Z"
             }
           ]
         }
