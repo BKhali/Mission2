@@ -10,11 +10,11 @@ namespace Mission2.classes
     {
         private int id;
         private string nom;
-        private int longueur;
-        private int largeur;
-        private int vitesse;
+        private decimal longueur;
+        private decimal largeur;
+        private decimal vitesse;
 
-        public bateau(int id, string nom, int longueur, int largeur, int vitesse)
+        public bateau(int id, string nom, decimal longueur, decimal largeur, decimal vitesse)
         {
             this.id = id;
             this.nom = nom;

@@ -30,6 +30,14 @@
         {
             this.listBoxliaison = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Ajout_heure = new System.Windows.Forms.TextBox();
+            this.Ajout_date = new System.Windows.Forms.TextBox();
+            this.Ajout_id_bateau = new System.Windows.Forms.TextBox();
+            this.Ajout_id_traverse = new System.Windows.Forms.TextBox();
             this.Nouvel_traverse_button = new System.Windows.Forms.Button();
             this.Ajout_id_liaison = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,14 +52,6 @@
             this.listBoxtraverse = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.Ajout_id_traverse = new System.Windows.Forms.TextBox();
-            this.Ajout_id_bateau = new System.Windows.Forms.TextBox();
-            this.Ajout_date = new System.Windows.Forms.TextBox();
-            this.Ajout_heure = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -88,6 +88,78 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nouvelle traversée";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(156, 201);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 25);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Heure";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(169, 158);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 25);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Date";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(119, 115);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 25);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Id_bateau";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(95, 78);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(131, 25);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Id_traversee";
+            // 
+            // Ajout_heure
+            // 
+            this.Ajout_heure.Location = new System.Drawing.Point(238, 201);
+            this.Ajout_heure.Margin = new System.Windows.Forms.Padding(6);
+            this.Ajout_heure.Name = "Ajout_heure";
+            this.Ajout_heure.Size = new System.Drawing.Size(196, 31);
+            this.Ajout_heure.TabIndex = 15;
+            // 
+            // Ajout_date
+            // 
+            this.Ajout_date.Location = new System.Drawing.Point(238, 158);
+            this.Ajout_date.Margin = new System.Windows.Forms.Padding(6);
+            this.Ajout_date.Name = "Ajout_date";
+            this.Ajout_date.Size = new System.Drawing.Size(196, 31);
+            this.Ajout_date.TabIndex = 14;
+            // 
+            // Ajout_id_bateau
+            // 
+            this.Ajout_id_bateau.Location = new System.Drawing.Point(238, 115);
+            this.Ajout_id_bateau.Margin = new System.Windows.Forms.Padding(6);
+            this.Ajout_id_bateau.Name = "Ajout_id_bateau";
+            this.Ajout_id_bateau.Size = new System.Drawing.Size(196, 31);
+            this.Ajout_id_bateau.TabIndex = 13;
+            // 
+            // Ajout_id_traverse
+            // 
+            this.Ajout_id_traverse.Location = new System.Drawing.Point(238, 72);
+            this.Ajout_id_traverse.Margin = new System.Windows.Forms.Padding(6);
+            this.Ajout_id_traverse.Name = "Ajout_id_traverse";
+            this.Ajout_id_traverse.Size = new System.Drawing.Size(196, 31);
+            this.Ajout_id_traverse.TabIndex = 12;
             // 
             // Nouvel_traverse_button
             // 
@@ -131,7 +203,7 @@
             // 
             // Supr_traverse
             // 
-            this.Supr_traverse.Location = new System.Drawing.Point(94, 89);
+            this.Supr_traverse.Location = new System.Drawing.Point(94, 80);
             this.Supr_traverse.Margin = new System.Windows.Forms.Padding(6);
             this.Supr_traverse.Name = "Supr_traverse";
             this.Supr_traverse.Size = new System.Drawing.Size(150, 94);
@@ -229,78 +301,6 @@
             this.label7.Size = new System.Drawing.Size(97, 25);
             this.label7.TabIndex = 28;
             this.label7.Text = "Traverse";
-            // 
-            // Ajout_id_traverse
-            // 
-            this.Ajout_id_traverse.Location = new System.Drawing.Point(238, 72);
-            this.Ajout_id_traverse.Margin = new System.Windows.Forms.Padding(6);
-            this.Ajout_id_traverse.Name = "Ajout_id_traverse";
-            this.Ajout_id_traverse.Size = new System.Drawing.Size(196, 31);
-            this.Ajout_id_traverse.TabIndex = 12;
-            // 
-            // Ajout_id_bateau
-            // 
-            this.Ajout_id_bateau.Location = new System.Drawing.Point(238, 115);
-            this.Ajout_id_bateau.Margin = new System.Windows.Forms.Padding(6);
-            this.Ajout_id_bateau.Name = "Ajout_id_bateau";
-            this.Ajout_id_bateau.Size = new System.Drawing.Size(196, 31);
-            this.Ajout_id_bateau.TabIndex = 13;
-            // 
-            // Ajout_date
-            // 
-            this.Ajout_date.Location = new System.Drawing.Point(238, 158);
-            this.Ajout_date.Margin = new System.Windows.Forms.Padding(6);
-            this.Ajout_date.Name = "Ajout_date";
-            this.Ajout_date.Size = new System.Drawing.Size(196, 31);
-            this.Ajout_date.TabIndex = 14;
-            // 
-            // Ajout_heure
-            // 
-            this.Ajout_heure.Location = new System.Drawing.Point(238, 201);
-            this.Ajout_heure.Margin = new System.Windows.Forms.Padding(6);
-            this.Ajout_heure.Name = "Ajout_heure";
-            this.Ajout_heure.Size = new System.Drawing.Size(196, 31);
-            this.Ajout_heure.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(95, 78);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 25);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Id_traversee";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(119, 115);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 25);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Id_bateau";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(169, 158);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 25);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Date";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(156, 201);
-            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 25);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Heure";
             // 
             // Form1
             // 

@@ -11,10 +11,10 @@ namespace Mission2.classes
         private int id;
         private liaison id_liaison;
         private bateau id_bateau;
-        private string date;
-        private int heure;
+        private DateTime date;
+        private TimeSpan heure;
 
-        public traversee(int id, liaison id_liaison, bateau id_bateau, string date, int heure)
+        public traversee(int id, liaison id_liaison, bateau id_bateau, DateTime date, TimeSpan heure)
         {
             this.id = id;
             this.id_liaison = id_liaison;
@@ -25,7 +25,13 @@ namespace Mission2.classes
         public int Id { get => id; set => id = value; }
         public liaison Liaison { get => id_liaison; set => id_liaison = value; }
         public bateau Bateau { get => id_bateau; set => id_bateau = value; }
-        public string Date { get => date; set => date = value; }
-        public int Heure { get => heure; set => heure = value; }
+        public DateTime Date { get => date; set => date = value; }
+        public TimeSpan Heure { get => heure; set => heure = value; }
+
+        public string DescriptionT
+        {
+            get => "Traversée:" + Id + " Liaison:" + Liaison.DescriptionL + " Bateau:" + Bateau + " Date:" + Date
+                + " Heure:" + Heure;
+        }
     }
 }
