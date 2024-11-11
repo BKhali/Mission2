@@ -42,19 +42,7 @@ namespace Connecte.DAO
                 maConnexionSql.openConnection();
 
 
-                Ocom = maConnexionSql.reqExec("Select ID_LIAISON, ID_SECTEUR, DUREE, id_port_depart, id_port_arrivee " +
-                                            "from liaison join secteur on liaison.ID_SECTEUR = secteur.ID_SECTEUR " +
-                                            "join port as id_port_depart on liaison.id_port_depart = port.ID_PORT " +
-                                            "join port as arrivee on liaison.arrivee = port.ID_PORT");
-
-                //Select ID_LIAISON, secteur.ID_SECTEUR, DUREE, id_port_depart, id_port_arrivee, 
-                 //                           from liaison join secteur on liaison.ID_SECTEUR = secteur.ID_SECTEUR
-                 //                join port as depart on liaison.id_port_depart = depart.ID_PORT
-                  //                         join port as arrivee on liaison.id_port_arrivee = arrivee.ID_PORT
-                  //                         join port as nomd on liaison.id_port_depart = nomd.ID_PORT
-
-
-
+                Ocom = maConnexionSql.reqExec("SELECT ID_LIAISON, secteur.ID_SECTEUR, DUREE, depart.ID_PORT AS ID_PORT_DEPART, depart.NOM AS NOM_PORT_DEPART, arrivee.ID_PORT AS ID_PORT_ARRIVEE, arrivee.NOM AS NOM_PORT_ARRIVEE, secteur.libelle AS LIBELLE_SECTEUR FROM liaison JOIN secteur ON liaison.ID_SECTEUR = secteur.ID_SECTEUR JOIN port AS depart ON liaison.id_port_depart = depart.ID_PORT JOIN port AS arrivee ON liaison.id_port_arrivee = arrivee.ID_PORT");
 
 
                 MySqlDataReader reader = Ocom.ExecuteReader();
@@ -63,20 +51,27 @@ namespace Connecte.DAO
 
 
 
-
                 while (reader.Read())
                 {
 
-                    int id = (int)reader.GetValue(0);
-                    secteur id_secteur = (secteur)reader.GetValue(1);
-                    float duree = (float)reader.GetValue(2);
-                    port id_port_depart = (port)reader.GetValue(3);
-                    port id_port_arivee = (port)reader.GetValue(4);
+                    int id = Convert.ToInt32((int)reader.GetValue(0));
+                    int id_secteur = Convert.ToInt32((int)reader.GetValue(1));
+                    decimal duree = Convert.ToDecimal((decimal)reader.GetValue(2));
+                    int id_port_depart = Convert.ToInt32((int)reader.GetValue(3));
+                    string nom_port_depart = (string)reader.GetValue(4);
+                    int id_port_arivee = Convert.ToInt32((int)reader.GetValue(5));
+                    string nom_port_arrivee = (string)reader.GetValue(6);
+                    string nom_secteur = (string)reader.GetValue(7);
 
-                    //Instanciation d'un Emplye
-                    e = new liaison(id, id_secteur, duree, id_port_depart, id_port_arivee);
+                    secteur secteur = new secteur(id_secteur, nom_secteur);
 
-                    // Ajout de cet employe à la liste 
+                    port port_arriver = new port(id_port_arivee, nom_port_arrivee);
+                    port port_depart = new port(id_port_depart, nom_port_depart);
+
+                    //Instanciation d'une liaison
+                    e = new liaison(id, secteur, duree, port_arriver, port_depart);
+
+                    // Ajout à la liste 
                     lc.Add(e);
 
 
@@ -88,7 +83,7 @@ namespace Connecte.DAO
 
                 maConnexionSql.closeConnection();
 
-                // Envoi de la liste au Manager
+                // Envoi de la liste
                 return (lc);
 
 

@@ -17,6 +17,9 @@ namespace Mission2.classes
             this.libelle = libelle;
         }
 
+        public int getId() { return id; }
+        public string getLibelle() {  return libelle; }
+
 
     }
 }

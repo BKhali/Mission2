@@ -11,7 +11,14 @@ namespace Mission2.classes
         private int id;
         private string nom;
 
-       
+        public port(int id, string nom)
+        {
+            this.id = id;
+            this.nom = nom;
+        }
+
+        public int getId() { return id; }
+        public string getNom() { return nom; }
     }
 
 }
