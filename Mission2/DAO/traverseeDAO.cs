@@ -124,6 +124,79 @@ namespace Connecte.DAO
         }
         **/
         // Récupération de la liste
+
+        public static List<traversee> getTraversee()
+        {
+
+            List<traversee> lc = new List<traversee>();
+
+            try
+            {
+
+                maConnexionSql = ConnexionSql.getInstance(provider, dataBase, uid, mdp);
+
+
+                maConnexionSql.openConnection();
+
+
+                Ocom = maConnexionSql.reqExec("SELECT l.ID_LIAISON AS liaison, t.ID_TRAVERSE, b.ID_BATEAU AS bateau, t.DATETRAVERSE, t.HEURE " +
+                    "FROM traverse t" +
+                    "JOIN liaison l ON l.ID_LIAISON = t.ID_LIAISON" +
+                    "JOIN bateau b ON b.ID_BATEAU = t.ID_BATEAU; ");
+
+
+                MySqlDataReader reader = Ocom.ExecuteReader();
+
+                traversee e;
+
+
+
+
+                while (reader.Read())
+                {
+
+                    liaison id_liaison = (liaison)reader.GetValue(0);
+                    int id = (int)reader.GetValue(1);
+                    bateau id_bateau = (bateau)reader.GetValue(2);
+                    string date = (string)reader.GetValue(3);
+                    int heure = (int)reader.GetValue(4);
+
+                    //Instanciation d'un Emplye
+                    e = new traversee(id, id_liaison, id_bateau, date, heure);
+
+                    // Ajout de cet employe à la liste 
+                    lc.Add(e);
+
+
+                }
+
+
+
+                reader.Close();
+
+                maConnexionSql.closeConnection();
+
+                // Envoi de la liste au Manager
+                return (lc);
+
+
+            }
+
+            catch (Exception emp)
+            {
+
+                throw (emp);
+
+            }
+
+
+        }
+
+
+
+
+
+        /**
         public static List<traversee> getTraversee()
         {
 
