@@ -24,7 +24,7 @@ namespace Mission2.classes
             this.id_port_arrivee = id_port_arrivee;
         }
 
-        public int getId() { return id; }
+        public int Id { get => id; set => id = value; }
         public string DescriptionL
         {
             get => "Liaison:" + id + " secteur:" + id_secteur.DescriptionS +" durée:" + duree + " port depart:" + id_port_depart.DescriptionP + " port arrivee:" + id_port_arrivee.DescriptionP;

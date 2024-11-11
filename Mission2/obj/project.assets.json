@@ -1946,20 +1946,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gamus\\.nuget\\packages\\": {}
+    "C:\\Users\\lgame\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gamus\\Desktop\\BTS sio2 annee\\Hamidou csharp\\Mission2\\Mission2\\Mission2.csproj",
+      "projectUniqueName": "B:\\école\\Projety\\Mission2\\Mission2\\Mission2.csproj",
       "projectName": "Mission2",
-      "projectPath": "C:\\Users\\gamus\\Desktop\\BTS sio2 annee\\Hamidou csharp\\Mission2\\Mission2\\Mission2.csproj",
-      "packagesPath": "C:\\Users\\gamus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gamus\\Desktop\\BTS sio2 annee\\Hamidou csharp\\Mission2\\Mission2\\obj\\",
+      "projectPath": "B:\\école\\Projety\\Mission2\\Mission2\\Mission2.csproj",
+      "packagesPath": "C:\\Users\\lgame\\.nuget\\packages\\",
+      "outputPath": "B:\\école\\Projety\\Mission2\\Mission2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\gamus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lgame\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1973,6 +1973,11 @@
         "net472": {
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

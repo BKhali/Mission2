@@ -35,18 +35,18 @@ namespace Connecte.Controleur
         }
         public List<traversee> chargementBDT()
         {
-<<<<<<< HEAD
 
             listetraversee = TraverseeDAO.getTraversee();
 
             return (listetraversee);
         }
-=======
->>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
+        public List<traversee> ChargerTraversesParLiaison(int id)
+        {
 
-            listetraversee = TraverseeDAO.getTraversee();
+            listetraversee = TraverseeDAO.getTraverseeId(id);
 
             return (listetraversee);
         }
+
     }
 }
