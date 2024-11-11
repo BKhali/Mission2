@@ -27,8 +27,6 @@ namespace Connecte.DAO
 
 
         private static MySqlCommand Ocom;
-
-<<<<<<< HEAD
         public static void deltraverse(traversee e)
         {
 
@@ -87,9 +85,6 @@ namespace Connecte.DAO
                 throw (emp);
             }
         }
-=======
-
->>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
         // Mise à jour d'une traversée
         /**
         public static void updateTraversee(traversee e)
@@ -127,12 +122,7 @@ namespace Connecte.DAO
 
         }
         **/
-<<<<<<< HEAD
         // Récupération de la liste
-
-=======
-        // Récupération de la liste des employés
->>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
         public static List<traversee> getTraversee()
         {
 
@@ -199,12 +189,6 @@ namespace Connecte.DAO
 
 
         }
-<<<<<<< HEAD
-
-
-
-
-
         /**
         public static List<traversee> getTraversee()
         {

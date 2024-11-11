@@ -27,14 +27,11 @@ namespace Mission2.classes
         public bateau Bateau { get => id_bateau; set => id_bateau = value; }
         public string Date { get => date; set => date = value; }
         public int Heure { get => heure; set => heure = value; }
-<<<<<<< HEAD
-=======
 
         public string DescriptionT
         {
             get => "Traversée:" + Id + " Liaison:" + Liaison + " Bateau:" + Bateau + " Date:" + Date
                 + " Heure:" + Heure;
         }
->>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
     }
 }
