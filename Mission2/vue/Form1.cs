@@ -25,7 +25,7 @@ namespace Mission2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lEmp = Maliaison.chargementBD();
+            lEmp = Maliaison.chargementBDL();
 
             affiche();
         }
@@ -41,9 +41,11 @@ namespace Mission2
 
                 listBoxliaison.DataSource = null;
                 listBoxliaison.DataSource = lEmp;
-                listBoxliaison.DisplayMember = "Description";
+                listBoxliaison.DisplayMember = "DescriptionL";
 
-
+                listBoxtraverse.DataSource = null;
+                listBoxtraverse.DataSource = lEmp;
+                listBoxtraverse.DisplayMember = "DescriptionT";
             }
 
 

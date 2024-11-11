@@ -22,5 +22,16 @@ namespace Mission2.classes
             this.date = date;
             this.heure = heure;
         }
+        public int Id { get => id; set => id = value; }
+        public liaison Liaison { get => id_liaison; set => id_liaison = value; }
+        public bateau Bateau { get => id_bateau; set => id_bateau = value; }
+        public string Date { get => date; set => date = value; }
+        public int Heure { get => heure; set => heure = value; }
+
+        public string DescriptionT
+        {
+            get => "Traversée:" + Id + " Liaison:" + Liaison + " Bateau:" + Bateau + " Date:" + Date
+                + " Heure:" + Heure;
+        }
     }
 }
