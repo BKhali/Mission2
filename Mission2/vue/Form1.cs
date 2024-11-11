@@ -42,8 +42,14 @@ namespace Mission2
                 listBoxliaison.DataSource = null;
                 listBoxliaison.DataSource = lEmp;
                 listBoxliaison.DisplayMember = "DescriptionL";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
 
+                listBoxtraverse.DataSource = null;
+                listBoxtraverse.DataSource = lEmp;
+                listBoxtraverse.DisplayMember = "DescriptionT";
             }
 
 

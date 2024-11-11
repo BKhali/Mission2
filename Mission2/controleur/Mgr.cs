@@ -9,10 +9,11 @@ using Mission2.classes;
 
 namespace Connecte.Controleur
 {
-  public  class Mgr
+    public class Mgr
     {
 
         liaisonDAO laiDAO = new liaisonDAO();
+        TraverseeDAO TraDAO = new TraverseeDAO();
 
         List<liaison> listeliaison;
         List<traversee> listetraversee;
@@ -34,11 +35,18 @@ namespace Connecte.Controleur
         }
         public List<traversee> chargementBDT()
         {
+<<<<<<< HEAD
 
             listetraversee = TraverseeDAO.getTraversee();
 
             return (listetraversee);
         }
+=======
+>>>>>>> 72123d54fe636f027fb2e36ac64bdeda2e5f1ced
 
+            listetraversee = TraverseeDAO.getTraversee();
+
+            return (listetraversee);
+        }
     }
 }
