@@ -72,7 +72,7 @@ namespace Connecte.DAO
                 maConnexionSql.openConnection();
 
 
-                Ocom = maConnexionSql.reqExec("DELETE from traverse WHERE ID_TRAVERSE= '" + e.Id);
+                Ocom = maConnexionSql.reqExec("DELETE from traverse WHERE ID_TRAVERSE= " + e.Id + " ;");
 
 
                 int i = Ocom.ExecuteNonQuery();
@@ -90,7 +90,7 @@ namespace Connecte.DAO
             }
         }
 
-        public static void inserttraverse(int id_liaison, int id_traverse, int id_bateau, string Datetraverse, int heure)
+        public static void inserttraverse(int id_liaison, int id_traverse, int id_bateau, string Datetraverse, string heure)
         {
 
             try
@@ -103,7 +103,7 @@ namespace Connecte.DAO
                 maConnexionSql.openConnection();
 
 
-                Ocom = maConnexionSql.reqExec("INSERT INTO traverse VALUES(" + id_liaison + "," + id_traverse + "," + id_bateau + "," + Datetraverse + "," + heure);
+                Ocom = maConnexionSql.reqExec("INSERT INTO traverse VALUES(" + id_liaison + "," + id_traverse + "," + id_bateau + ",'" + Datetraverse + "','" + heure + "' );");
 
                 int i = Ocom.ExecuteNonQuery();
 

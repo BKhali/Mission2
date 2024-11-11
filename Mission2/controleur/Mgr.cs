@@ -48,19 +48,17 @@ namespace Connecte.Controleur
             return (listetraversee);
         }
 
-        public static void inserttraverse(int id_liaison, int id_traverse, int id_bateau, string Datetraverse, int heure)
-        {
-            TraverseeDAO.inserttraverse(id_liaison, id_traverse, id_bateau, Datetraverse, heure);
-        }
-
-        public static void deltraverse(traversee e)
-        {
-            TraverseeDAO.deltraverse(e);
-        }
-
-        public static void modiftraverse(traversee e, string date, string heure)
+        public void modiftraverse(traversee e, string date, string heure)
         {
             TraverseeDAO.modiftraverse(e, date, heure);
+        }
+        public void traversedel(traversee id)
+        {
+            TraverseeDAO.deltraverse(id);
+        }
+        public void traverseInsert(int id_liaison, int id_traverse, int id_bateau, string Datetraverse, string heure)
+        {
+            TraverseeDAO.inserttraverse(id_liaison, id_traverse, id_bateau, Datetraverse, heure);
         }
     }
 }
