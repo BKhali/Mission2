@@ -40,6 +40,13 @@ namespace Connecte.Controleur
 
             return (listetraversee);
         }
+        public List<traversee> ChargerTraversesParLiaison(int id)
+        {
+
+            listetraversee = TraverseeDAO.getTraverseeId(id);
+
+            return (listetraversee);
+        }
 
         public static void inserttraverse(int id_liaison, int id_traverse, int id_bateau, string Datetraverse, int heure)
         {
@@ -49,6 +56,11 @@ namespace Connecte.Controleur
         public static void deltraverse(traversee e)
         {
             TraverseeDAO.deltraverse(e);
+        }
+
+        public static void modiftraverse(traversee e, string date, string heure)
+        {
+            TraverseeDAO.modiftraverse(e, date, heure);
         }
     }
 }

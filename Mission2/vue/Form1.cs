@@ -15,59 +15,72 @@ namespace Mission2
     public partial class Form1 : Form
     {
         Mgr Maliaison;
+        Mgr Matraverse;
         List<liaison> lEmp = new List<liaison>();
+        List<traversee> lEmpt = new List<traversee>();
         public Form1()
         {
             InitializeComponent();
 
             Maliaison = new Mgr();
+            Matraverse = new Mgr();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lEmp = Maliaison.chargementBDL();
+            lEmpt = Matraverse.chargementBDT();
 
-            affiche();
+            afficheL();
+            //afficheT();
         }
 
-        public void affiche()
-
+        public void afficheL()
         {
-
-
             try
             {
-
-
                 listBoxliaison.DataSource = null;
                 listBoxliaison.DataSource = lEmp;
                 listBoxliaison.DisplayMember = "DescriptionL";
             }
-
-
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
+            }
 
+        }
+        public void afficheT()
+        {
+            try
+            {
+                listBoxtraverse.DataSource = null;
+                listBoxtraverse.DataSource = lEmpt;
+                listBoxtraverse.DisplayMember = "DescriptionT";
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
 
         }
 
         // Événement pour gérer la sélection dans listBoxLiaison
-        private void listBoxLiaison_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void listBoxliaison_SelectedIndexChanged_1(object sender, EventArgs e)
+
         {
             // Vérifier si un élément est sélectionné
             if (listBoxliaison.SelectedItem != null)
             {
                 // Récupérer la liaison sélectionnée
-                liaison selectedLiaison = listBoxtraverse.SelectedItem as liaison;
+                liaison selectedLiaison = listBoxliaison.SelectedItem as liaison;
 
                 if (selectedLiaison != null)
                 {
                     try
                     {
                         // Charger les traversées associées à la liaison sélectionnée
-                        List<traversee> traverses = traversee.ChargerTraversesParLiaison(selectedLiaison.getId);
+                        List<traversee> traverses = Matraverse.ChargerTraversesParLiaison(selectedLiaison.Id);
 
                         // Afficher les traversées dans listBoxTraverse
                         listBoxtraverse.DataSource = null;
@@ -81,6 +94,5 @@ namespace Mission2
                 }
             }
         }
-
     }
 }

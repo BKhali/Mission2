@@ -45,16 +45,8 @@ namespace Connecte {
             {
                 throw (emp);
             }
-
-
-
         }
 
-
-
-        /**
-         * méthode de création d'une instance de connexion si elle n'existe pas (singleton)
-         */
         public static ConnexionSql getInstance(string unProvider, string uneDataBase, string unUid, string unMdp)
         {
 
